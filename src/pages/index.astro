@@ -1,13 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="container border">
-		<h1>Hello World</h1>
-	</main>
+  <main class="">
+    <section class="hero">
+      <div class="container pt-8">
+		<Header />
+	  </div>
+    </section>
+  </main>
 </Layout>
 
 <style>
-	
+  .hero {
+    background-image: url("./images/bg-hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 689px;
+  }
 </style>

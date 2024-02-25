@@ -1,7 +1,28 @@
 ---
-
+import { Menu } from "lucide-astro";
 ---
 
-<div>
-  <h1 class="text-2xl font-thin text-red-500">Hello Header</h1>
-</div>
+<header class="flex justify-between items-center flex-row gap-12 text-base font-normal">
+  <a href="/" class="font-kanit uppercase tracking-widest">INTERIA</a>
+  <nav class="hidden md:flex flex-1 justify-end">
+    <ul class="flex gap-4 lg:gap-12 items-center">
+      <a href="#"><li>home</li></a>
+      <a href="#"><li>pages</li></a>
+      <a href="#"><li>services</li></a>
+      <a href="#"><li>team</li></a>
+      <a href="#"><li>blog</li></a>
+    </ul>
+  </nav>
+  <button
+    class="hidden md:block font-kanit tracking-widest rounded-full px-8 py-2 border border-ring hover:bg-primary-foreground transition-colors duration-300"
+  >
+    GET STARTED
+  </button>
+  <button class="block md:hidden">
+    <Menu class="w-6 h-6" />
+  </button>
+</header>
+
+<style>
+
+</style>
