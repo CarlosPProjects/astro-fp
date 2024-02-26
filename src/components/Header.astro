@@ -1,8 +1,11 @@
 ---
 import { Menu } from "lucide-astro";
+import Button from "./Button.astro";
 ---
 
-<header class="flex justify-between items-center flex-row gap-12 text-base font-normal">
+<header
+  class="flex justify-between items-center flex-row gap-12 text-base font-normal"
+>
   <a href="/" class="font-kanit uppercase tracking-widest">INTERIA</a>
   <nav class="hidden md:flex flex-1 justify-end">
     <ul class="flex gap-4 lg:gap-12 items-center">
@@ -13,11 +16,7 @@ import { Menu } from "lucide-astro";
       <a href="#"><li>blog</li></a>
     </ul>
   </nav>
-  <button
-    class="hidden md:block text-base font-kanit tracking-widest rounded-full px-8 py-2 border border-ring hover:bg-primary-foreground transition-colors duration-300"
-  >
-    GET STARTED
-  </button>
+  <Button text="Get Started" />
   <button class="block md:hidden">
     <Menu class="w-6 h-6" />
   </button>

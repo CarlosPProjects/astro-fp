@@ -20,10 +20,17 @@ export default {
           DEFAULT: "#131616",
           foreground: "#212828",
         },
+        background: {
+          DEFAULT: "#131616",
+          foreground: "#191D1D",
+        }
       },
       letterSpacing: {
         widest: "0.45em",
       },
+      borderRadius: {
+        "4xl": "50px",
+      }
     },
     container: {
       center: true,

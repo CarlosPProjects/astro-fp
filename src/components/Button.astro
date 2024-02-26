@@ -1,0 +1,13 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<button
+  class="hidden md:block text-base uppercase font-kanit tracking-widest rounded-full px-8 py-2 border border-ring hover:bg-primary-foreground transition-colors duration-300"
+>
+  {text}
+</button>

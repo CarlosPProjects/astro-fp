@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="text-primary">
+    <!-- Hero section -->
     <section class="hero flex flex-col">
       <div class="container pt-8">
         <Header />
@@ -26,24 +28,125 @@ import Header from "../components/Header.astro";
         </div>
       </div>
     </section>
+    <!-- About section -->
+    <section class="bg-background-foreground pt-24 pb-60">
+      <div class="container flex flex-col">
+        <div class="flex flex-col mb-16">
+          <span
+            class="font-kanit tracking-widest text-primary-foreground uppercase"
+          >
+            About
+          </span>
+          <h2 class="font-kanit text-4xl">
+            We are the best interior design studio in london
+          </h2>
+          <p class="max-w-lg mt-4">
+            Posuere urna nec tincidunt praesent. Egestas maecenas pharetra
+            convallis posuere. Ipsum nunc aliquet bibendum enim. Sem integer
+            vitae justo eget magna fermentum iaculis eu non.
+          </p>
+        </div>
+        <div class="flex gap-4 h-[440px]">
+          <div class="flex flex-1 flex-row gap-4">
+            <div class="flex-1">
+              <img
+                src="./images/laura-davidson-ULP07chR5EQ-unsplash.webp"
+                class="object-cover object-center w-full h-full"
+				alt="laura-davidson-ULP07chR5EQ-unsplash"
+              />
+            </div>
+            <div class="flex-1">
+              <img
+                src="./images/xie-yujie-nick-kXg2KRuxcgI-unsplash.webp"
+                class="object-cover object-center w-full h-full"
+				alt="xie-yujie-nick-kXg2KRuxcgI-unsplash"
+              />
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col">
+            <div class="flex flex-1 flex-row">
+              <div class="flex-1 max-h-60 max-w-60">
+                <img
+                  src="./images/denys-striyeshyn-Rj1eIzAypmg-unsplash.webp"
+                  class="object-cover object-center rounded-tr-4xl w-full h-full"
+				  alt="denys-striyeshyn-Rj1eIzAypmg-unsplash"
+                />
+              </div>
+              <div class="flex-1 flex items-end justify-end">
+                <Button text="Learn about" />
+              </div>
+            </div>
+            <div class="flex flex-1 flex-row gap-4 items-center justify-between">
+              <div
+                class="px-10 py-8 flex flex-col"
+              >
+                <span
+                  class="font-kanit text-4xl text-primary-foreground uppercase"
+                  >2k+</span
+                >
+                <h5 class="font-kanit uppercase tracking-widest">
+                  Project done
+                </h5>
+              </div>
+              <div
+                class="px-10 py-8 flex flex-col"
+              >
+                <span
+                  class="font-kanit text-4xl text-primary-foreground uppercase"
+                  >20+</span
+                >
+                <h5 class="font-kanit uppercase tracking-widest">
+                  Pro teams
+                </h5>
+              </div>
+              <div
+                class="px-10 py-8 flex flex-col"
+              >
+                <span
+                  class="font-kanit text-4xl text-primary-foreground uppercase"
+                  >300+</span
+                >
+                <h5 class="font-kanit uppercase tracking-widest">
+                  Global clients
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<!-- CTA section -->
+	<section class="relative z-10">
+		<div class="container bg-background-foreground h-80 rounded-4xl border rounded-br-none -mt-40 -mb-40">
 
-    <style>
-      .hero {
-        background-image: url("./images/bg-hero.webp");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 689px;
-      }
-      .writing-mode-lr {
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-      }
-      @media (max-width: 768px) {
-        .hero {
-          height: 600px;
-        }
-      }
-    </style>
+		</div>
+	</section>
+	<!-- Team section -->
+	<section class="bg-background pt-64 h-screen">
+		<div class="container">
+			<h1>
+				helllo
+			</h1>
+		</div>
+	</section>
   </main>
 </Layout>
+
+<style>
+  .hero {
+    background-image: url("./images/bg-hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 689px;
+  }
+  .writing-mode-lr {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+  @media (max-width: 768px) {
+    .hero {
+      height: 600px;
+    }
+  }
+</style>
