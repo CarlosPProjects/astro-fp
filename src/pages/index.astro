@@ -8,10 +8,12 @@ import Button from "../components/Button.astro";
   <main class="text-primary">
     <!-- Hero section -->
     <section class="hero flex flex-col">
-      <div class="container pt-8">
+      <div class="container max-md:px-4 pt-8">
         <Header />
       </div>
-      <div class="container flex-1 flex flex-col-reverse md:flex-row">
+      <div
+        class="container max-md:px-4 flex-1 flex flex-col-reverse md:flex-row"
+      >
         <div
           class="hidden sm:flex flex-0 md:flex-1 items-end justify-start pb-14"
         >
@@ -29,9 +31,9 @@ import Button from "../components/Button.astro";
       </div>
     </section>
     <!-- About section -->
-    <section class="bg-background-foreground pt-24 pb-60">
-      <div class="container flex flex-col">
-        <div class="flex flex-col mb-16">
+    <section class="bg-background-foreground py-14 md:py-24">
+      <div class="container max-md:px-4 flex flex-col">
+        <div class="flex flex-col mb-8 lg:mb-16">
           <span
             class="font-kanit tracking-widest text-primary-foreground uppercase"
           >
@@ -46,67 +48,56 @@ import Button from "../components/Button.astro";
             vitae justo eget magna fermentum iaculis eu non.
           </p>
         </div>
-        <div class="flex gap-4 h-[440px]">
+        <div class="flex flex-col lg:flex-row gap-4">
           <div class="flex flex-1 flex-row gap-4">
             <div class="flex-1">
               <img
                 src="./images/laura-davidson-ULP07chR5EQ-unsplash.webp"
-                class="object-cover object-center w-full h-full"
-				alt="laura-davidson-ULP07chR5EQ-unsplash"
+                class="object-cover object-center w-full h-36 md:h-60 lg:h-full rounded-tl-4xl lg:rounded-l-4xl"
+                alt="laura-davidson-ULP07chR5EQ-unsplash"
               />
             </div>
+
             <div class="flex-1">
               <img
                 src="./images/xie-yujie-nick-kXg2KRuxcgI-unsplash.webp"
-                class="object-cover object-center w-full h-full"
-				alt="xie-yujie-nick-kXg2KRuxcgI-unsplash"
+                class="object-cover object-center w-full h-36 md:h-60 lg:h-full rounded-tr-4xl lg:rounded-none"
+                alt="xie-yujie-nick-kXg2KRuxcgI-unsplash"
               />
             </div>
           </div>
-          <div class="flex flex-1 flex-col">
-            <div class="flex flex-1 flex-row">
-              <div class="flex-1 max-h-60 max-w-60">
-                <img
-                  src="./images/denys-striyeshyn-Rj1eIzAypmg-unsplash.webp"
-                  class="object-cover object-center rounded-tr-4xl w-full h-full"
-				  alt="denys-striyeshyn-Rj1eIzAypmg-unsplash"
-                />
-              </div>
-              <div class="flex-1 flex items-end justify-end">
-                <Button text="Learn about" />
-              </div>
-            </div>
-            <div class="flex flex-1 flex-row gap-4 items-center justify-between">
-              <div
-                class="px-10 py-8 flex flex-col"
-              >
+          <div class="flex flex-1 flex-col gap-8 lg:gap-0">
+            <img
+              src="./images/denys-striyeshyn-Rj1eIzAypmg-unsplash.webp"
+              class="h-36 md:h-60 object-cover object-center max-lg:rounded-b-4xl lg:rounded-r-4xl"
+              alt="denys-striyeshyn-Rj1eIzAypmg-unsplash"
+            />
+
+            <div
+              class="flex flex-1 flex-col sm:flex-row gap-4 items-center justify-between"
+            >
+              <div class="p-4 md:px-10 md:py-8 flex flex-col items-center">
                 <span
                   class="font-kanit text-4xl text-primary-foreground uppercase"
                   >2k+</span
                 >
-                <h5 class="font-kanit uppercase tracking-widest">
+                <h5 class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36">
                   Project done
                 </h5>
               </div>
-              <div
-                class="px-10 py-8 flex flex-col"
-              >
+              <div class="p-4 md:px-10 md:py-8 flex flex-col items-center">
                 <span
                   class="font-kanit text-4xl text-primary-foreground uppercase"
                   >20+</span
                 >
-                <h5 class="font-kanit uppercase tracking-widest">
-                  Pro teams
-                </h5>
+                <h5 class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36">Pro teams</h5>
               </div>
-              <div
-                class="px-10 py-8 flex flex-col"
-              >
+              <div class="p-4 md:px-10 md:py-8 flex flex-col items-center">
                 <span
                   class="font-kanit text-4xl text-primary-foreground uppercase"
                   >300+</span
                 >
-                <h5 class="font-kanit uppercase tracking-widest">
+                <h5 class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36">
                   Global clients
                 </h5>
               </div>
@@ -115,20 +106,12 @@ import Button from "../components/Button.astro";
         </div>
       </div>
     </section>
-	<!-- CTA section -->
-	<section class="relative z-10">
-		<div class="container bg-background-foreground h-80 rounded-4xl border rounded-br-none -mt-40 -mb-40">
-
-		</div>
-	</section>
-	<!-- Team section -->
-	<section class="bg-background pt-64 h-screen">
-		<div class="container">
-			<h1>
-				helllo
-			</h1>
-		</div>
-	</section>
+    <!-- Team section -->
+    <section class="bg-background pt-64 h-screen">
+      <div class="container">
+        <h1>helllo</h1>
+      </div>
+    </section>
   </main>
 </Layout>
 
