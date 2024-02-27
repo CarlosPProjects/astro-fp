@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { Star, StarHalf } from "lucide-astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -39,7 +40,7 @@ import Footer from "../components/Footer.astro";
           >
             About
           </span>
-          <h2 class="font-kanit text-4xl">
+          <h2 class="font-kanit text-4xl leading-normal lg:leading-relaxed">
             We are the best interior design studio in london
           </h2>
           <p class="max-w-lg mt-4">
@@ -81,7 +82,9 @@ import Footer from "../components/Footer.astro";
                   class="font-kanit text-4xl text-primary-foreground uppercase"
                   >2k+</span
                 >
-                <h5 class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36">
+                <h5
+                  class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36"
+                >
                   Project done
                 </h5>
               </div>
@@ -90,14 +93,20 @@ import Footer from "../components/Footer.astro";
                   class="font-kanit text-4xl text-primary-foreground uppercase"
                   >20+</span
                 >
-                <h5 class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36">Pro teams</h5>
+                <h5
+                  class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36"
+                >
+                  Pro teams
+                </h5>
               </div>
               <div class="p-4 md:px-10 md:py-8 flex flex-col items-center">
                 <span
                   class="font-kanit text-4xl text-primary-foreground uppercase"
                   >300+</span
                 >
-                <h5 class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36">
+                <h5
+                  class="font-kanit uppercase tracking-widest text-center lg:text-start max-w-36"
+                >
                   Global clients
                 </h5>
               </div>
@@ -107,13 +116,61 @@ import Footer from "../components/Footer.astro";
       </div>
     </section>
     <!-- Team section -->
-    <section class="bg-background pt-64 h-screen">
-      <div class="container">
-        <h1>helllo</h1>
+    <section class="bg-background py-14 md:py-24 h-screen">
+      <div
+        class="container max-md:px-4 flex flex-col justify-between lg:flex-row"
+      >
+        <div class="flex-1 flex flex-col lg:max-w-md">
+          <span
+            class="font-kanit tracking-widest text-primary-foreground uppercase"
+          >
+            About
+          </span>
+          <h2
+            class="font-kanit text-4xl leading-normal lg:leading-relaxed max-w-sm"
+          >
+            Projects are handled by professional certified teams
+          </h2>
+          <p class="max-w-lg mt-6">
+            Posuere urna nec tincidunt praesent egestas maecenas pharetra
+            convallis posuere ipsum nunc aliquet bibendum enim consectetur
+            adipiscing.
+          </p>
+          <div class="flex flex-col gap-4 mt-16">
+            <img
+              src="./images/Avatars.png"
+              width="180"
+              height="50"
+              alt="Avatars"
+            />
+            <div class="flex items-center">
+              <div class="flex gap-1">
+                <Star class="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                <Star class="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                <Star class="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                <Star class="w-4 h-4 text-yellow-500 fill-yellow-500" />
+                <StarHalf class="w-4 h-4 text-yellow-500 fill-yellow-500" />
+              </div>
+              <span class="font-nunito"> (4.5 reviews)</span>
+            </div>
+            <span
+              class="font-kanit tracking-widest text-primary-foreground uppercase"
+            >
+              Trusted by customers
+            </span>
+          </div>
+        </div>
+        <div class="flex-1 flex flex-col">
+          <div class="grid">
+            <div class="col-span-1">
+              <img src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" class="h-56" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <Footer />
   </main>
+  <Footer />
 </Layout>
 
 <style>
