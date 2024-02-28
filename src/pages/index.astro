@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { Star, StarHalf } from "lucide-astro";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -160,11 +161,30 @@ import { Star, StarHalf } from "lucide-astro";
             </span>
           </div>
         </div>
-        <div class="flex-1 flex flex-col">
-          <div class="grid">
-            <div class="col-span-1">
-              <img src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg" class="h-56" alt="" />
-            </div>
+        <div class="flex-1 grid grid-cols-2 max-w-lg gap-5">
+          <div class="col-span-1 max-h-64">
+            <img
+              src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+              class="w-full h-full object-cover object-center"
+              alt=""
+            />
+          </div>
+          <div class="col-span-1 max-h-64">
+            <img
+              src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+              class="w-full h-full object-cover object-center"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-end items-center col-span-1 max-h-64">
+            <Button text="Learn teams" class="px-7" />
+          </div>
+          <div class="col-span-1 max-h-64">
+            <img
+              src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+              class="w-full h-full object-cover object-center rounded-br-4xl"
+              alt=""
+            />
           </div>
         </div>
       </div>
