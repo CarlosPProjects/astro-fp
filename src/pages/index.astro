@@ -117,9 +117,9 @@ import Button from "../components/Button.astro";
       </div>
     </section>
     <!-- Team section -->
-    <section class="bg-background py-14 md:py-24 h-screen">
+    <section class="bg-background py-14 md:py-24">
       <div
-        class="container max-md:px-4 flex flex-col justify-between lg:flex-row"
+        class="container max-md:px-4 flex flex-col justify-between lg:flex-row gap-14 lg:gap-8"
       >
         <div class="flex-1 flex flex-col lg:max-w-md">
           <span
@@ -161,7 +161,7 @@ import Button from "../components/Button.astro";
             </span>
           </div>
         </div>
-        <div class="flex-1 grid grid-cols-2 max-w-lg gap-5">
+        <div class="flex-1 grid grid-cols-2 lg:max-w-lg gap-5">
           <div class="col-span-1 max-h-64">
             <img
               src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
@@ -171,22 +171,55 @@ import Button from "../components/Button.astro";
           </div>
           <div class="col-span-1 max-h-64">
             <img
-              src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+              src="./images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
               class="w-full h-full object-cover object-center"
               alt=""
             />
           </div>
-          <div class="flex justify-end items-center col-span-1 max-h-64">
-            <Button text="Learn teams" class="px-7" />
+          <div class="col-span-1 grid place-content-center max-h-64">
+            <Button text="Learn teams" class="px-6" />
           </div>
           <div class="col-span-1 max-h-64">
             <img
-              src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
+              src="./images/ludovic-migneault-EZ4TYgXPNWk-unsplash.jpg"
               class="w-full h-full object-cover object-center rounded-br-4xl"
               alt=""
             />
           </div>
         </div>
+      </div>
+      <div
+        class="container max-md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between items-center mt-20"
+      >
+        <div class="">
+          <img src="./images/Logo1.svg" />
+        </div>
+        <div class="">
+          <img src="./images/Logo2.svg" />
+        </div>
+        <div class="">
+          <img src="./images/Logo3.svg" />
+        </div>
+        <div class="">
+          <img src="./images/Logo4.svg" />
+        </div>
+      </div>
+    </section>
+    <!-- Landing points -->
+    <section class="py-14 md:py-24">
+      <div class="container max-md:px-4 flex flex-col">
+        <div class="flex flex-col md:flex-row justify-between">
+          <h3 class="font-kanit text-4xl">01. Interior design</h3>
+          <div class="flex flex-col">
+            <p>
+              Posuere urna nec tincidunt praesent egestas maecenas pharetra
+              convallis posuere ipsum nunc aliquet bibendum enim consectetur
+              adipiscing.
+            </p>
+            
+          </div>
+        </div>
+        <br class="my-8 md:my-12 bg-white h-2 w-full" />
       </div>
     </section>
   </main>
