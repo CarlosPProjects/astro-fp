@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { Star, StarHalf } from "lucide-astro";
+import { Star, StarHalf, ChevronRight } from "lucide-astro";
 import Button from "../components/Button.astro";
 ---
 
@@ -57,6 +57,7 @@ import Button from "../components/Button.astro";
                 src="./images/laura-davidson-ULP07chR5EQ-unsplash.webp"
                 class="object-cover object-center w-full h-36 md:h-60 lg:h-full rounded-tl-4xl lg:rounded-l-4xl"
                 alt="laura-davidson-ULP07chR5EQ-unsplash"
+                loading="lazy"
               />
             </div>
 
@@ -65,6 +66,7 @@ import Button from "../components/Button.astro";
                 src="./images/xie-yujie-nick-kXg2KRuxcgI-unsplash.webp"
                 class="object-cover object-center w-full h-36 md:h-60 lg:h-full rounded-tr-4xl lg:rounded-none"
                 alt="xie-yujie-nick-kXg2KRuxcgI-unsplash"
+                loading="lazy"
               />
             </div>
           </div>
@@ -73,6 +75,7 @@ import Button from "../components/Button.astro";
               src="./images/denys-striyeshyn-Rj1eIzAypmg-unsplash.webp"
               class="h-36 md:h-60 object-cover object-center max-lg:rounded-b-4xl lg:rounded-r-4xl"
               alt="denys-striyeshyn-Rj1eIzAypmg-unsplash"
+              loading="lazy"
             />
 
             <div
@@ -167,6 +170,7 @@ import Button from "../components/Button.astro";
               src="./images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg"
               class="w-full h-full object-cover object-center"
               alt=""
+              loading="lazy"
             />
           </div>
           <div class="col-span-1 max-h-64">
@@ -174,6 +178,7 @@ import Button from "../components/Button.astro";
               src="./images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg"
               class="w-full h-full object-cover object-center"
               alt=""
+              loading="lazy"
             />
           </div>
           <div class="col-span-1 grid place-content-center max-h-64">
@@ -184,42 +189,122 @@ import Button from "../components/Button.astro";
               src="./images/ludovic-migneault-EZ4TYgXPNWk-unsplash.jpg"
               class="w-full h-full object-cover object-center rounded-br-4xl"
               alt=""
+              loading="lazy"
             />
           </div>
         </div>
       </div>
       <div
-        class="container max-md:px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between items-center mt-20"
+        class="container max-md:px-4 grid justify-center grid-cols-2 lg:grid-cols-4 gap-4 items-center mt-20"
       >
-        <div class="">
-          <img src="./images/Logo1.svg" />
+        <div class="col-span-1">
+          <img src="./images/Logo1.svg" loading="lazy" />
         </div>
-        <div class="">
-          <img src="./images/Logo2.svg" />
+        <div class="col-span-1">
+          <img src="./images/Logo2.svg" loading="lazy" />
         </div>
-        <div class="">
-          <img src="./images/Logo3.svg" />
+        <div class="col-span-1">
+          <img src="./images/Logo3.svg" loading="lazy" />
         </div>
-        <div class="">
-          <img src="./images/Logo4.svg" />
+        <div class="col-span-1">
+          <img src="./images/Logo4.svg" loading="lazy" />
         </div>
       </div>
     </section>
     <!-- Landing points -->
     <section class="py-14 md:py-24">
       <div class="container max-md:px-4 flex flex-col">
-        <div class="flex flex-col md:flex-row justify-between">
+        <div
+          class="flex flex-col gap-4 md:flex-row justify-between md:items-center"
+        >
           <h3 class="font-kanit text-4xl">01. Interior design</h3>
-          <div class="flex flex-col">
-            <p>
+          <div class="flex flex-col gap-6 w-full lg:max-w-md">
+            <p class="text-primary-foreground">
               Posuere urna nec tincidunt praesent egestas maecenas pharetra
               convallis posuere ipsum nunc aliquet bibendum enim consectetur
               adipiscing.
             </p>
-            
+            <span class="flex items-center gap-1 group cursor-pointer"
+              ><a href="#" class="font-kanit tracking-widest">LEARN MORE</a
+              ><ChevronRight
+                class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+              /></span
+            >
           </div>
         </div>
-        <br class="my-8 md:my-12 bg-white h-2 w-full" />
+        <hr class="my-12 w-full border-secondary-foreground" />
+        <div
+          class="flex flex-col gap-4 md:flex-row justify-between md:items-center"
+        >
+          <h3 class="font-kanit text-4xl">02. Furniture design</h3>
+          <div class="flex flex-col gap-6 w-full lg:max-w-md">
+            <p class="text-primary-foreground">
+              Posuere urna nec tincidunt praesent egestas maecenas pharetra
+              convallis posuere ipsum nunc aliquet bibendum enim consectetur
+              adipiscing.
+            </p>
+            <span class="flex items-center gap-1 group cursor-pointer"
+              ><a href="#" class="font-kanit tracking-widest">LEARN MORE</a
+              ><ChevronRight
+                class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+              /></span
+            >
+          </div>
+        </div>
+        <hr class="my-12 w-full border-secondary-foreground" />
+        <div
+          class="flex flex-col gap-4 md:flex-row justify-between md:items-center"
+        >
+          <h3 class="font-kanit text-4xl">03. Landscape design</h3>
+          <div class="flex flex-col gap-6 w-full lg:max-w-md">
+            <p class="text-primary-foreground">
+              Posuere urna nec tincidunt praesent egestas maecenas pharetra
+              convallis posuere ipsum nunc aliquet bibendum enim consectetur
+              adipiscing.
+            </p>
+            <span class="flex items-center gap-1 group cursor-pointer"
+              ><a href="#" class="font-kanit tracking-widest">LEARN MORE</a
+              ><ChevronRight
+                class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
+              /></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="grid grid-cols-2 lg:grid-cols-4 overflow-hidden">
+      <div class="col-span-1">
+        <img
+          src="./images/aaina-sharma-j8iojzepfq4-unsplash-65e4b389a75f5.webp"
+          alt=""
+          class="object-cover object-center aspect-square"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-span-1">
+        <img
+          src="./images/kam-idris-hyb7kbu4x7e-unsplash-65e4b3895df32.webp"
+          alt=""
+          class="object-cover object-center aspect-square"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-span-1">
+        <img
+          src="./images/nathan-dumlao-xdi-fefmlsw-unsplash-65e4b38b162cc.webp"
+          alt=""
+          class="object-cover object-center aspect-square"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-span-1">
+        <img
+          src="./images/thanos-pal-61tfynirwmi-unsplash-65e4b38b1903a.webp"
+          alt=""
+          class="object-cover object-center aspect-square"
+          loading="lazy"
+        />
       </div>
     </section>
   </main>

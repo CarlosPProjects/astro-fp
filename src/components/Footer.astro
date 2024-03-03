@@ -1,13 +1,53 @@
 ---
-
+import { Facebook, Instagram, Youtube, Linkedin } from "lucide-astro";
 ---
 
 <footer class="flex flex-col text-base">
   <!-- Footer section -->
-  <section class="bg-background"></section>
+  <section class="bg-background py-12 lg:py-24">
+    <div class="container max-md:px-4 flex justify-center md:justify-end">
+      <a href="/" class="font-kanit uppercase tracking-widest">INTERIA</a>
+    </div>
+    <hr class="max-w-6xl mx-auto my-12 lg:py-16 border-secondary-foreground" />
+    <div
+      class="container max-md:px-4 flex flex-col md:flex-row gap-4 items-center justify-center md:justify-between"
+    >
+      <div class="flex gap-4 items-center">
+        <div class="border border-primary-foreground rounded-full hover:bg-primary-foreground transition-colors duration-300">
+          <a href="#">
+            <Facebook class="w-4 h-4 m-2" />
+          </a>
+        </div>
+        <div class="border border-primary-foreground rounded-full hover:bg-primary-foreground transition-colors duration-300">
+          <a href="#">
+            <Instagram class="w-4 h-4 m-2" />
+          </a>
+        </div>
+        <div class="border border-primary-foreground rounded-full hover:bg-primary-foreground transition-colors duration-300">
+          <a href="#">
+            <Youtube class="w-4 h-4 m-2" />
+          </a>
+        </div>
+        <div class="border border-primary-foreground rounded-full hover:bg-primary-foreground transition-colors duration-300">
+          <a href="#">
+            <Linkedin class="w-4 h-4 m-2" />
+          </a>
+        </div>
+        
+      </div>
+      <div class="max-w-md">
+        <p class="text-center md:text-end">
+          Posuere urna nec tincidunt praesent egestas maecenas pharetra
+          convallis posuere ipsum nunc.
+        </p>
+      </div>
+    </div>
+  </section>
   <!-- Copyright section -->
   <section class="bg-background-foreground py-12">
-    <div class="container max-md:px-4 flex flex-col md:flex-row gap-4 justify-between items-center">
+    <div
+      class="container max-md:px-4 flex flex-col md:flex-row gap-4 justify-between items-center"
+    >
       <p class="font-nunito text-center">
         © Copyright by Stoodiow. All right reserved.
       </p>

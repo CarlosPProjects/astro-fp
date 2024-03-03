@@ -26,7 +26,7 @@ export default {
         }
       },
       letterSpacing: {
-        widest: "0.45em",
+        widest: "0.40em",
       },
       borderRadius: {
         "4xl": "50px",
