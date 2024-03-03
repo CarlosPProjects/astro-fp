@@ -4,12 +4,21 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { Star, StarHalf, ChevronRight } from "lucide-astro";
 import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="text-primary">
     <!-- Hero section -->
-    <section class="flex flex-col bg-[url('./images/background-image.webp')] bg-cover bg-center bg-no-repeat h-[689px]">
+    <section class="flex flex-col relative h-[689px]">
+      <Image
+        src={"./images/background-image.webp"}
+        alt="Background hero section"
+        class="object-cover object-center w-full h-full bg-no-repeat absolute -z-10"
+        width={1920}
+        height={1080}
+        loading="eager"
+      />
       <div class="container max-md:px-4 pt-8">
         <Header />
       </div>
